@@ -1,0 +1,876 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+    /* border: 1px solid red; */
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    /* background-color: #000000; */
+    font-family: Poppins, sans-serif;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+    text-wrap: balance;
+}
+
+input,
+textarea,
+button {
+    font-family: Poppins, sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --primaryColor: #be9c79;
+    --secondaryColor: #660600;
+    --darkColor: #330300;
+    --lightColor: #ff0f00;
+    --regularFont: 1.6rem;
+    --headingFont: 54px;
+    --ffPrimary: Poppins, sans-serif;
+}
+
+/* Default code Ends here */
+
+/* project standard classes Starts */
+
+.align {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 3rem;
+}
+
+.componentSpacing {
+    padding: 1rem 0;
+}
+
+/* project standard classes Ends */
+.dflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dflex-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dflex-col-start {
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    /* text-align: center; */
+}
+
+.dflex-col-just-start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+.dflex-start {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    flex-direction: column;
+}
+
+.dflexaround {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 2rem;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0rem 2rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0rem 2rem;
+}
+
+.grid-33 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 0rem 2rem;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0rem 2rem;
+}
+
+.grid-5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 0rem 2rem;
+}
+
+.grid-6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 0rem 2rem;
+}
+
+/*::: HEADER navbar ============================ */
+
+.navTitle li {
+    list-style-type: none;
+}
+
+.navTitle li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.navTitle {
+    gap: 2rem;
+    padding: 12px;
+}
+
+.social i {
+    font-size: 1.6rem;
+    margin-right: 2rem;
+    color: #ffffff;
+
+}
+
+.social {
+    margin-left: 250px;
+    padding: 20px;
+
+}
+
+.navBody {
+    gap: 2rem;
+}
+
+.navImage img {
+    max-height: 80px;
+    padding: 0 180px;
+}
+
+.navLink li {
+    list-style-type: none;
+}
+
+.navLink li a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.navLink {
+    gap: 2rem;
+    margin-right: 17rem;
+}
+
+.navLink i {
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+
+.news {
+    display: flex;
+    justify-content: center;
+}
+
+.lines {
+    width: 78%;
+    height: 2px;
+    background-color: #ffffff4e;
+}
+
+.head {
+    background-image: url(./assets/images/adobestock_187665696_slider-2.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem 8rem 23rem 8rem;
+
+}
+/* ============================ heroSection ==================================== */
+
+.heroHeading {
+    padding: 15rem 4rem 4rem 4rem;
+}
+
+.heroHeading h5 {
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 2.55px;
+    font-weight: 400;
+}
+
+.heroHeading h1 {
+    font-family: PT Serif, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+}
+/* =================== main-business ============================================ */
+.businessContainer {
+    padding: 10px 200px;
+}
+
+.businessImage {
+    padding: 30px 0;
+
+}
+
+.businessImage img {
+    color: #2e71f0;
+}
+
+.businessTitle h2 {
+    font-size: 36px;
+    text-align: center;
+    font-family: PT Serif, sans-serif;
+    color: #43484d;
+}
+
+.valuesIcon i {
+    font-size: 5rem;
+    color: #86939e;
+}
+
+/* =============== businessbody ==================================== */
+
+.valuesBody {
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.valueskk h3 {
+    font-size: 24px;
+    font-weight: 600;
+    font-size: Poppins, sans-serif;
+    margin-top: 20px;
+    color: rgba(67, 72, 77, 1);
+}
+
+.valueskk p {
+    color: #86939e;
+    font-family: 'PT Serif', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.valueskk {
+    border-left: 0.1px solid #000;
+    /* padding-top: 6rem; */
+}
+/* =================== main-2-cloudcontainer============================== */
+
+.cloudText h2 {
+    font-family: PT Serif, sans-serif;
+    font-size: 36px;
+    color: rgba(67, 72, 77, 1);
+    margin-top: 2rem;
+}
+
+.cloudText {
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.teamCardHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamCardHeader img {
+    max-height: 160px;
+
+}
+
+.cloudText p {
+    font-family: PT Serif, sans-serif;
+    font-size: 16px;
+    color: #86939e;
+    margin-top: 2rem;
+}
+
+.cloudText button {
+    padding: 1rem;
+    margin-top: 3rem;
+    background-color: #1056DB;
+    border: none;
+}
+
+.cloudText button a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+}
+/* ==================== cloudbody ==================== */
+
+.cloudBody {
+    padding: 0 12rem;
+}
+
+.teamcardbody1 h4 {
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #303030;
+    text-align: center;
+}
+
+.teamcardbody1 p {
+    font-family: PT Serif, sans-serif;
+    font-size: 16px;
+    color: #86939e;
+    text-align: left;
+    /* width: 60%; */
+    line-height: 30px;
+}
+
+.teamcardbody1 {
+    /* box-shadow: #ffffff 0px 7px 29px 0px; */
+    /* width: 80%; */
+}
+
+.CloudContainer {
+    background-color: #f6f7f9;
+    padding: 4rem 5rem;
+}
+
+.employee2 {
+    background-color: #ffffff;
+
+    /* max-width: 100%; */
+    width: 90%;
+    /* padding-inline: 15px;     */
+}
+
+.employee2 .teamcardbody1 {
+    padding: 30px;
+
+}
+
+.employee2 figure img {
+    /* height: 100%; */
+    width: 100%;
+    object-fit: cover;
+}
+/* ======================= main-3-limitcontainer ==================== */
+
+.LimitContainer {
+    text-align: center;
+    padding: 50px 20px;
+    /* background: #f4f4f4; */
+    background-color: #f6f7f9;
+}
+
+.limitTitle h1 {
+    margin-bottom: 20px;
+    font-family: PT Serif, sans-serif;
+    font-size: 36px;
+    color: #43484d;
+}
+
+.limitTitle p {
+    margin-bottom: 30px;
+    color: #86939e;
+    font-family: PT Serif, sans-serif;
+    font-size: 16px;
+}
+
+.btn-primary {
+    padding: 10px 90px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 3rem;
+}
+
+.btn button {
+    padding: 10px 90px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 3rem;
+}
+
+.btn button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+/* =================== features ===================================== */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* padding: 20px; */
+
+}
+
+.feature h2 {
+    /* flex: 1 1 45%; */
+    margin: 20px;
+    /* text-align: center; */
+    font-family: PT Serif, sans-serif;
+    font-size: 36px;
+    color: #43484d;
+
+}
+
+.feature p {
+    font-family: PT Serif, sans-serif;
+    font-size: 16px;
+    color: #86939e;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.stat {
+    /* flex: 1 1 20%; */
+    text-align: center;
+    margin: 10px;
+    background-color: #ffffff;
+
+    width: 90%;
+}
+
+.stat h3 {
+    font-size: 3.5rem;
+    color: #007BFF;
+    
+
+}
+
+.stat p {
+    color: #86939e;
+    font-size: 18px;
+}
+
+.star :hover {
+    background-color: #1056DB;
+    /* background-color: #ffffff; */
+
+}
+
+.stats :hover {
+    background-color: #1056DB;
+}
+/* ====================== main-4-skillcontainer ======================= */
+
+.skillImage{
+    width: 100%;
+}
+
+.skillImage img {
+    height: auto;
+    width: 20%;
+    align-items: center;
+    filter: grayscale(1);
+    opacity: 0.5;
+    object-fit: contain;
+    transition: 0.5s;
+}
+
+.skillImage img:hover {
+    filter: grayscale(0);
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.skillTitle p {
+    /* font-size: 20px; */
+    color: #43484C;
+    font-size: 18px;
+    margin-bottom: 20px;
+    /* width: 90%; */
+    text-align: center;
+    margin-top: 4rem;
+    font-family: PT Serif, sans-serif;
+}
+
+.author {
+    font-size: 16px;
+    color: #86939E;
+    line-height: 25px;
+}
+
+.carouselExampleControls {
+    /* padding: 30px; */
+    text-align: center;
+}
+
+.skillBody {
+    padding: 50px 40px;
+}
+
+/* ========================== main-5-yourcontainer ===================== */
+
+.yourText h5 {
+    color: #ffffff;
+    font-size: 11px;
+}
+
+.yourText h2 {
+    font-size: 40px;
+    text-align: center;
+    font-family: PT Serif, sans-serif;
+    color: #ffffff;
+}
+
+.yourContainer {
+    background-color: #1056DB;
+}
+
+.yourBody {
+    padding: 50px 60px;
+}
+
+.you button {
+    padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+    background-color: #f6f7f9;
+    border: none;
+}
+
+.you button a {
+    text-decoration: none;
+    font-size: 16px;
+}
+/* ===================== footer =========================== */
+
+.contactLink p {
+    font-size: 14px;
+    color: #A8ACB9;
+    font-family: Poppins, sans-serif;
+}
+
+.contactLink h4 {
+    font-family: PT Serif, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+    margin-bottom: 10px;
+    color: #A8ACB9;
+    margin-top: 2rem;
+}
+
+.quick h3 {
+    font-size: 14px;
+    font-family: Poppins, sans-serif;
+    color: #fff;
+}
+
+.quick a {
+    font-size: 14px;
+    color: #A8ACB9;
+    text-decoration: none;
+    margin-top: 2rem;
+}
+
+.contactContainer {
+    background-color: #484848;
+}
+
+.join h3 {
+    font-size: 14px;
+    font-family: Poppins, sans-serif;
+    color: #fff;
+}
+
+.join a {
+    font-size: 14px;
+    color: #A8ACB9;
+    text-decoration: none;
+    margin-top: 2rem;
+}
+
+.join h4 {
+    font-size: 14px;
+    font-family: Poppins, sans-serif;
+    color: #fff;
+    margin-top: 3rem;
+}
+
+.join i {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    color: #A8ACB9;
+}
+
+.sub h4 {
+    font-size: 14px;
+    font-family: Poppins, sans-serif;
+    color: #fff;
+
+}
+
+.sub p {
+    font-size: 14px;
+    color: #A8ACB9;
+    font-family: Poppins, sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.contactBody {
+    padding: 80px 190px;
+}
+
+.copyText p {
+    font-size: 14px;
+    color: #A8ACB9;
+    font-family: Poppins, sans-serif;
+}
+
+.ccc h5 {
+    margin-left: 100px;
+    font-size: 14px;
+    color: #A8ACB9;
+}
+/* ==================== copyContainer============================ */
+
+.copyContainer {
+    background-color: #484848;
+}
+
+.copyBody {
+    padding: 20px 160px;
+}
+
+.news {
+    display: flex;
+    justify-content: center;
+}
+
+.lines {
+    width: 78%;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+@media(width <=576px) {
+    .navContainer .heroContainer .businessContainer .cloudContainer .limitContainer .skillContainer .yourContainer .contactContainer .copyContainer {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        max-width: 576px;
+        /* margin: auto; */
+        /* padding: 0 1rem; */
+    }
+
+    .businessTitle h2 {
+        font-size: 20px;
+        text-align: center;
+        font-family: PT Serif, sans-serif;
+        color: #43484d;
+
+    }
+
+    .businessBody {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .businessImage {
+        padding: 0px 0;
+
+    }
+
+    .businessContainer {
+        padding: 20px 50px;
+    }
+
+    .valuesBody {
+        margin-bottom: 0px;
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .valueskk {
+        border-left: 0px solid #000;
+        /* padding-top: 6rem; */
+
+    }
+    .cloudBody {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 6rem;
+        gap: 3rem;
+    }
+    .cloudText h2 {
+        font-family: PT Serif, sans-serif;
+        font-size: 24px;
+        color: rgba(67, 72, 77, 1);
+        margin-top: 2rem;
+    }
+    .employee2 {
+        background-color: #ffffff;
+    }
+    .limitBody {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .limitTitle h1 {
+        margin-bottom: 20px;
+        font-family: PT Serif, sans-serif;
+        font-size: 24px;
+        color: #43484d;
+    }
+    .yourBody {
+        padding: 5px 9px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .yourText h5 {
+        color: #ffffff;
+        font-size: 11px;
+    }
+    
+    .yourText h2 {
+        font-size: 30px;
+        text-align: center;
+        font-family: PT Serif, sans-serif;
+        color: #ffffff;
+    }
+    
+    .yourContainer {
+        background-color: #1056DB;
+    }
+    
+    .yourBody {
+        padding: 20px 60px;
+    }
+    
+    .you button {
+        padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+        background-color: #f6f7f9;
+        border: none;
+        margin-top: 2rem;
+    }
+    
+    .you button a {
+        text-decoration: none;
+        font-size: 16px;
+    }
+    .contactBody {
+        padding: 12px 19px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .copyBody {
+        padding: 20px 16px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .ccc h5 {
+        margin-left: 0px;
+        font-size: 14px;
+        color: #A8ACB9;
+        gap: 2rem;
+    }
+    .navBody {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    
+    .news .lines {
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff4e;
+    }
+    .navTitle {
+        gap: 2rem;
+        padding: 2px;
+    }
+    .social {
+        margin-left: 50px;
+        padding: 0px;
+    
+    }
+    .navImage img {
+        /* max-height: 20px; */
+        /* padding: 5px 80px; */
+    }
+    .head {
+        background-image: url(./assets/images/adobestock_187665696_slider-2.jpeg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 1rem 4rem 10rem 4rem;
+    
+    }
+    
+    .navLink {
+        gap: 2rem;
+        margin-right: 1rem;
+        display: none;
+    }
+    .heroHeading {
+        padding: 5rem 4rem 4rem 4rem;
+    }
+    .heroHeading h1 {
+        font-family: PT Serif, sans-serif;
+        font-size: 27px;
+        /* text-align: center; */
+        color: #ffffff;
+    }
+
+    
+}
